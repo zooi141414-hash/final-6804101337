@@ -1,0 +1,829 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\zooi1\\final-exam\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "C:\\Users\\zooi1\\final-exam\\playwright.config.ts",
+    "rootDir": "C:/Users/zooi1/final-exam/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/zooi1/final-exam/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/zooi1/final-exam/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\zooi1\\final-exam\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "C:\\Users\\zooi1\\final-exam\\tests",
+        "snapshotDir": "C:\\Users\\zooi1\\final-exam\\tests",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "https://www.saucedemo.com",
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure",
+          "video": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "example.spec.ts",
+      "file": "example.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5364,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T06:57:07.048Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-b06063a3e613764d08f8",
+          "file": "example.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 871,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T06:57:30.474Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-274e97907a6e3638a22f",
+          "file": "example.spec.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "integration\\IT-01.spec.ts",
+      "file": "integration/IT-01.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "IT-01: top-down REAL Login -> browser-level Inventory STUB",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "description",
+                  "description": "ทดสอบ Login จริงร่วมกับ Inventory Stub ที่จำลองด้วย page.setContent()",
+                  "location": {
+                    "file": "C:\\Users\\zooi1\\final-exam\\tests\\integration\\IT-01.spec.ts",
+                    "line": 3,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 909,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Login ผ่านหน้าเว็บไซต์จริง",
+                      "duration": 664
+                    },
+                    {
+                      "title": "สร้าง Inventory Stub",
+                      "duration": 41
+                    },
+                    {
+                      "title": "ตรวจสอบผลจาก Stub",
+                      "duration": 35
+                    }
+                  ],
+                  "startTime": "2026-10-16T06:57:31.367Z",
+                  "annotations": [
+                    {
+                      "type": "description",
+                      "description": "ทดสอบ Login จริงร่วมกับ Inventory Stub ที่จำลองด้วย page.setContent()",
+                      "location": {
+                        "file": "C:\\Users\\zooi1\\final-exam\\tests\\integration\\IT-01.spec.ts",
+                        "line": 3,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "aeaf4dcca87754465641-6a93853910bbaba5daba",
+          "file": "integration/IT-01.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "integration\\IT-02.spec.ts",
+      "file": "integration/IT-02.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "IT-02: DRIVER login state -> REAL Inventory and Cart",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "description",
+                  "description": "ใช้ Driver เตรียมสถานะ Login เพื่อทดสอบ Inventory และ Cart จริง",
+                  "location": {
+                    "file": "C:\\Users\\zooi1\\final-exam\\tests\\integration\\IT-02.spec.ts",
+                    "line": 3,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 966,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "สร้าง Driver และเปิด Inventory",
+                      "duration": 520
+                    },
+                    {
+                      "title": "ตรวจสอบ Inventory จริง",
+                      "duration": 52
+                    },
+                    {
+                      "title": "เพิ่มสินค้า 2 รายการ",
+                      "duration": 93
+                    },
+                    {
+                      "title": "ตรวจสอบสินค้าใน Cart",
+                      "duration": 107
+                    }
+                  ],
+                  "startTime": "2026-10-16T06:57:32.309Z",
+                  "annotations": [
+                    {
+                      "type": "description",
+                      "description": "ใช้ Driver เตรียมสถานะ Login เพื่อทดสอบ Inventory และ Cart จริง",
+                      "location": {
+                        "file": "C:\\Users\\zooi1\\final-exam\\tests\\integration\\IT-02.spec.ts",
+                        "line": 3,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4fa6bfb55dc95b1f15b3-0a804e4898f3b2703bff",
+          "file": "integration/IT-02.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "system\\ST-01.spec.ts",
+      "file": "system/ST-01.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "ST-01: complete purchase of two products",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "description",
+                  "description": "ทดสอบการซื้อ Backpack และ Bike Light ตั้งแต่ Login จนสั่งซื้อสำเร็จ",
+                  "location": {
+                    "file": "C:\\Users\\zooi1\\final-exam\\tests\\system\\ST-01.spec.ts",
+                    "line": 3,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1463,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Login และตรวจสอบ Inventory",
+                      "duration": 780
+                    },
+                    {
+                      "title": "เพิ่มสินค้าสองรายการ",
+                      "duration": 131
+                    },
+                    {
+                      "title": "ตรวจสอบ Cart",
+                      "duration": 61
+                    },
+                    {
+                      "title": "กรอก Checkout Information",
+                      "duration": 166
+                    },
+                    {
+                      "title": "ตรวจสอบ Overview และสั่งซื้อ",
+                      "duration": 94
+                    },
+                    {
+                      "title": "ตรวจสอบ Order Complete",
+                      "duration": 43
+                    }
+                  ],
+                  "startTime": "2026-10-16T06:57:33.305Z",
+                  "annotations": [
+                    {
+                      "type": "description",
+                      "description": "ทดสอบการซื้อ Backpack และ Bike Light ตั้งแต่ Login จนสั่งซื้อสำเร็จ",
+                      "location": {
+                        "file": "C:\\Users\\zooi1\\final-exam\\tests\\system\\ST-01.spec.ts",
+                        "line": 3,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b437a3ea838a6734331f-68d25959565fafbf0274",
+          "file": "system/ST-01.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "system\\ST-02.spec.ts",
+      "file": "system/ST-02.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "ST-02: checkout validation and recovery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "description",
+                  "description": "ตรวจสอบ Checkout Validation และการแก้ไขข้อมูลจนสั่งซื้อสำเร็จ",
+                  "location": {
+                    "file": "C:\\Users\\zooi1\\final-exam\\tests\\system\\ST-02.spec.ts",
+                    "line": 3,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1481,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Login เพิ่มสินค้า และเปิด Checkout",
+                      "duration": 856
+                    },
+                    {
+                      "title": "ตรวจสอบ First Name is required",
+                      "duration": 76
+                    },
+                    {
+                      "title": "ตรวจสอบ Last Name is required",
+                      "duration": 93
+                    },
+                    {
+                      "title": "ตรวจสอบ Postal Code is required",
+                      "duration": 119
+                    },
+                    {
+                      "title": "แก้ไขข้อมูลและสั่งซื้อสำเร็จ",
+                      "duration": 148
+                    }
+                  ],
+                  "startTime": "2026-10-16T06:57:34.782Z",
+                  "annotations": [
+                    {
+                      "type": "description",
+                      "description": "ตรวจสอบ Checkout Validation และการแก้ไขข้อมูลจนสั่งซื้อสำเร็จ",
+                      "location": {
+                        "file": "C:\\Users\\zooi1\\final-exam\\tests\\system\\ST-02.spec.ts",
+                        "line": 3,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "56c0a83e2e23481adf32-fcdcf2d10841c1c1d778",
+          "file": "system/ST-02.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "unit\\UT-01.spec.ts",
+      "file": "unit/UT-01.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "UT-01: Login Form Validation",
+          "file": "unit/UT-01.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "UT-01.1: empty username and password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "description",
+                      "description": "ตรวจสอบการ Login เมื่อไม่กรอก Username และ Password",
+                      "location": {
+                        "file": "C:\\Users\\zooi1\\final-exam\\tests\\unit\\UT-01.spec.ts",
+                        "line": 5,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 793,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "เปิดหน้า Login",
+                          "duration": 425
+                        },
+                        {
+                          "title": "ส่งฟอร์มโดยไม่กรอกข้อมูล",
+                          "duration": 67
+                        },
+                        {
+                          "title": "ตรวจสอบ Error และ URL",
+                          "duration": 18
+                        }
+                      ],
+                      "startTime": "2026-10-16T06:57:36.276Z",
+                      "annotations": [
+                        {
+                          "type": "description",
+                          "description": "ตรวจสอบการ Login เมื่อไม่กรอก Username และ Password",
+                          "location": {
+                            "file": "C:\\Users\\zooi1\\final-exam\\tests\\unit\\UT-01.spec.ts",
+                            "line": 5,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8c739bc89a6720d0c629-54f4b4234188f85dc805",
+              "file": "unit/UT-01.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "UT-01.2: missing password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "description",
+                      "description": "ตรวจสอบการ Login เมื่อกรอก Username แต่ไม่กรอก Password",
+                      "location": {
+                        "file": "C:\\Users\\zooi1\\final-exam\\tests\\unit\\UT-01.spec.ts",
+                        "line": 23,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 790,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "เปิดหน้า Login และกรอก Username",
+                          "duration": 438
+                        },
+                        {
+                          "title": "กด Login โดยไม่กรอก Password",
+                          "duration": 57
+                        },
+                        {
+                          "title": "ตรวจสอบ Error และ URL",
+                          "duration": 16
+                        }
+                      ],
+                      "startTime": "2026-10-16T06:57:37.083Z",
+                      "annotations": [
+                        {
+                          "type": "description",
+                          "description": "ตรวจสอบการ Login เมื่อกรอก Username แต่ไม่กรอก Password",
+                          "location": {
+                            "file": "C:\\Users\\zooi1\\final-exam\\tests\\unit\\UT-01.spec.ts",
+                            "line": 23,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8c739bc89a6720d0c629-416b2ace0476596fcfd7",
+              "file": "unit/UT-01.spec.ts",
+              "line": 23,
+              "column": 7
+            },
+            {
+              "title": "UT-01.3: invalid login details",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "description",
+                      "description": "ตรวจสอบการ Login เมื่อ Username และ Password ไม่ถูกต้อง",
+                      "location": {
+                        "file": "C:\\Users\\zooi1\\final-exam\\tests\\unit\\UT-01.spec.ts",
+                        "line": 42,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 845,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "เปิดหน้า Login และกรอกข้อมูลผิด",
+                          "duration": 487
+                        },
+                        {
+                          "title": "กด Login",
+                          "duration": 74
+                        },
+                        {
+                          "title": "ตรวจสอบ Error และ URL",
+                          "duration": 19
+                        }
+                      ],
+                      "startTime": "2026-10-16T06:57:37.885Z",
+                      "annotations": [
+                        {
+                          "type": "description",
+                          "description": "ตรวจสอบการ Login เมื่อ Username และ Password ไม่ถูกต้อง",
+                          "location": {
+                            "file": "C:\\Users\\zooi1\\final-exam\\tests\\unit\\UT-01.spec.ts",
+                            "line": 42,
+                            "column": 7
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8c739bc89a6720d0c629-40c069adb5013c050578",
+              "file": "unit/UT-01.spec.ts",
+              "line": 42,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "unit\\UT-02.spec.ts",
+      "file": "unit/UT-02.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "UT-02: product button state Add to cart -> Remove -> Add to cart",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "description",
+                  "description": "ตรวจสอบสถานะปุ่ม Add to cart และ Remove รวมถึง Cart Badge",
+                  "location": {
+                    "file": "C:\\Users\\zooi1\\final-exam\\tests\\unit\\UT-02.spec.ts",
+                    "line": 3,
+                    "column": 5
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 949,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Login เข้าสู่ระบบ",
+                      "duration": 575
+                    },
+                    {
+                      "title": "ตรวจสอบปุ่มก่อนเพิ่มสินค้า",
+                      "duration": 27
+                    },
+                    {
+                      "title": "เพิ่มสินค้าเข้า Cart",
+                      "duration": 76
+                    },
+                    {
+                      "title": "ลบสินค้าออกจาก Cart",
+                      "duration": 49
+                    }
+                  ],
+                  "startTime": "2026-10-16T06:57:38.744Z",
+                  "annotations": [
+                    {
+                      "type": "description",
+                      "description": "ตรวจสอบสถานะปุ่ม Add to cart และ Remove รวมถึง Cart Badge",
+                      "location": {
+                        "file": "C:\\Users\\zooi1\\final-exam\\tests\\unit\\UT-02.spec.ts",
+                        "line": 3,
+                        "column": 5
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6c91503e0156bd8f2507-e7443e8816072dd5f9a1",
+          "file": "unit/UT-02.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-16T06:57:06.317Z",
+    "duration": 33647.117,
+    "expected": 10,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
